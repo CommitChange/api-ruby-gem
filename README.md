@@ -17,7 +17,7 @@ CCAPI.config({
 Now you will be able to make requests to the api (depending on your access permissions):
 
 
-All functions take a hash as the second parameter. The hashes for `.post` and `.patch` take a `query` key in the hash to send data. These function calls return an array of data (it is always an array, and may contain only one element). The keys within the resulting array are `HashWithIndifferentAccess`:
+All functions take a hash as the second parameter. The hashes for `.post` and `.patch` take a `query` key in the hash to send data. These function calls return an array of data (it is always an array, and may contain only one element). The hashes within the resulting array are `HashWithIndifferentAccess`:
 
 ```rb
 id = CCAPI.post("/supporters", {
